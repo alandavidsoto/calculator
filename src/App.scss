@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+
+}
+/* body {
+    
+} */
+
+.App {
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+header {
+    margin-bottom: 15px;
+}
+.contenedor-parteSuperior {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    & > span {
+        font-size: 18px;
+    }
+    .contenedor-colortheme{
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 11px;
+        }
+        .colortheme{
+            margin-left: 10px;
+            display:flex;
+            align-items: center;
+            padding:3px;
+            border-radius: 25px;
+            width: 50px;
+            justify-content: space-evenly;
+            span {
+                display:block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .desactived{
+                background-color: transparent !important;
+            }
+/*             .desactive {
+                
+            }    */          
+        }
+
+    }
+}
+
+
+.resultado {
+    height: 75px;
+    padding: 18px;
+    border-radius: 5px;
+    text-align: end;
+}
+
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 16px;
+    padding: 18px;
+    border-radius: 7px;
+    div {
+        height: 48px;
+        font-size: 15px;
+/*         box-shadow: inset 0px -4px 1px #888; */
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .reset {
+        grid-column: 1/3;
+    }
+    .igual {
+        grid-column: 3/5;
+    }
+}
+
+
+///////////////////// tema azul
+
+.body {
+    background-color: hsl(222, 26%, 31%);
+}
+.pad_toggle {
+    background-color: hsl(223, 31%, 20%);
+}
+.resultado_azul {
+    background-color: hsl(224, 36%, 15%);
+}
+
+.del_reset{
+    background-color: hsl(225, 21%, 49%);
+}
+
+.del_reset_shadow{
+    box-shadow:inset 0 -4px  1px  hsl(224, 28%, 35%);
+}
+.bg_numbers{
+    background-color: hsl(30, 25%, 89%)
+}
+
+.bg_numbers_shadow{
+   box-shadow:inset 0 -4px  1px  hsl(28, 16%, 65%);
+}
+
+.igual_toggle {
+    background-color: hsl(6, 63%, 50%) ;
+}
+.igual_toggle_shadow {
+    box-shadow:inset 0 -4px  1px  hsl(6, 70%, 34%);
+}
+
+.color_numbers{
+    color: hsl(221, 14%, 31%)
+}
+.other_color{
+    color: hsl(0, 0, 100%)
+}
+
+.color_header {
+    color: hsl(0, 0, 100%);
+}
+
+
+
+////////////////////////// tema blanco 
+
+
+
+.body_W  {
+    background-color: hsl(0, 0%, 90%);
+}
+.pad_toggle_W  {
+    background-color: hsl(0, 5%, 81%);
+}
+.resultado_W  {
+    background-color: hsl(0, 0%, 93%);
+}
+
+/////////// keys
+
+.del_reset_W {
+    background-color: hsl(185, 42%, 37%);
+}
+
+.del_reset_shadow_W {
+    box-shadow:inset 0 -4px  1px  hsl(185, 58%, 25%);
+}
+.bg_numbers_W {
+    background-color:  hsl(45, 7%, 89%) ;
+}
+
+.bg_numbers_shadow_W {
+    box-shadow:inset 0 -4px  1px  hsl(35, 11%, 61%);
+}
+
+.igual_toggle_W  {
+    background-color: hsl(25, 98%, 40%)
+}
+.igual_toggle_shadow_W  {
+    box-shadow:inset 0 -4px  1px  hsl(25, 99%, 27%);
+}
+
+// texto
+
+.color_numbers_W {
+    color: hsl(60, 10%, 19%)
+}
+.other_color_W {
+    color: hsl(0, 0, 100%)
+}
+.color_header_W {
+    color: hsl(60, 10%, 19%);
+}
+
+
+
+
+
+
+
+
+////////////////////////// tema violeta 
+
+
+
+.body_V {
+    background-color: hsl(268, 75%, 9%);
+}
+.pad_toggle_V {
+    background-color: hsl(268, 71%, 12%);
+}
+.resultado_V  {
+    background-color: hsl(268, 71%, 12%);
+}
+
+/////////// keys
+
+.del_reset_V {
+    background-color: hsl(281, 89%, 26%);
+}
+
+.del_reset_shadow_V {
+    box-shadow:inset 0 -4px  1px  hsl(285, 91%, 52%);
+}
+.bg_numbers_V{
+    background-color:  hsl(268, 47%, 21%) ;
+}
+
+.bg_numbers_shadow_V {
+    box-shadow:inset 0 -4px  1px  hsl(290, 70%, 36%);
+}
+
+.igual_toggle_V  {
+    background-color: hsl(176, 100%, 44%)
+}
+.igual_toggle_shadow_V  {
+    box-shadow:inset 0 -4px  1px  hsl(177, 92%, 70%);
+}
+
+// texto
+
+.color_numbers_V {
+    color: hsl(52, 100%, 62%)
+}
+.other_color_V {
+    color: hsl(0, 0, 100%)
+}
+.color_header_V {
+    color: hsl(52, 100%, 62%);
+}
+
+
+
+
+
+@media (max-width: 450px){
+    header {
+        margin-bottom: 20px;
+    }
+    .contenedor-parteSuperior {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        & > span {
+            font-size: 23px;
+        }
+        .contenedor-colortheme{
+            display: flex;
+            align-items: center;
+            span {
+                font-size: 12px;
+            }
+            .colortheme{
+                margin-left: 10px;
+                display:flex;
+                align-items: center;
+                padding:3px;
+                border-radius: 25px;
+                width: 50px;
+                justify-content: space-evenly;
+                span {
+                    display:block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                .desactived{
+                    background-color: transparent !important;
+                }
+    /*             .desactive {
+                    
+                }    */          
+            }
+    
+        }
+    }
+    .App {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+    .contenedor-botones{
+        gap: 10px;
+        div {
+            font-size: 12px;
+        }
+    }
+}
